@@ -32,7 +32,7 @@ let lightColor = (element, number) => {
     }, number -250);
     setTimeout(() => {
         element.classList.remove('selected');
-    });
+    }, number + 150);
 }
 
 // CHECA SE OS BOTÕES CLICADOS SÃOS OS MESMOS DA ORDEM GERADA AUTOMATICAMENTE
@@ -44,7 +44,7 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length) {
-        alert(`Pontuação: ${score}\nVocê acertou! próximo nível!`);
+       // alert(`Pontuação: ${score}\nVocê acertou! próximo nível!`);
         nextLevel();
     }
 }
